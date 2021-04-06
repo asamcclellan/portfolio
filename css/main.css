@@ -331,14 +331,17 @@ footer a{
 
   #first-project{
     width: 33%;
+    padding: 1em;
   }
 
   #second-project{
     width: 33%;
+    padding: 1em;
   }
 
   #third-project{
     width: 33%;
+    padding: 1em;
   }
 }
 
