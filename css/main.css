@@ -96,8 +96,11 @@ body{
 
 /*** GRID ***/
 .full-width{
-  padding:1.875em 1.875em 1.875em 1.875em;
+  padding: 1.875em;
+}
 
+.divider{
+  border: .0625em solid black;
 }
 
 /*** HEADER ***/
@@ -132,6 +135,12 @@ header a{
 
 /*** ABOUT ***/
 #about{
+
+}
+
+#about h2{
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .about-col-1{
@@ -180,7 +189,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   text-align: center;
 }
 
