@@ -91,17 +91,18 @@ textarea {
 body{
   font-family: 'Comfortaa', cursive;
   color: #000000;
-  background-color: #72c48c;
 }
 
 /*** GRID ***/
 .full-width{
-  padding: 1.875em;
+  padding: 3.125em;
 }
 
+/*
 .divider{
   border: .0625em solid black;
 }
+*/
 
 /*** HEADER ***/
 header{
@@ -110,6 +111,12 @@ header{
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
+  background-color: #67b573;
+  color: white;
+}
+
+header h1{
+  font-size: 2em;
 }
 
 header nav{
@@ -126,21 +133,32 @@ header ul{
 }
 
 header li{
+  margin: .625em 0;
 }
 
 header a{
   text-decoration: none;
-  font-size:1.25em;
+  font-size: 1.25em;
+  color: #264a2c;
 }
 
 /*** ABOUT ***/
 #about{
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background-color: white;
 }
 
 #about h2{
   font-size: 1.5em;
   text-align: center;
+  margin-bottom: 2em;
+}
+
+#about h2 span{
+  font-size: .75em;
 }
 
 .about-col-1{
@@ -152,6 +170,7 @@ header a{
 }
 
 header span{
+
 }
 
 /*** PROJECTS ***/
@@ -160,28 +179,27 @@ header span{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #f4f4f4;
 }
 
 #projects h1{
-  font-size: 2em;
-}
-
-#projects h2{
   font-size: 1.5em;
+  margin-bottom: 2em;
 }
 
 #first-project{
   text-align: center;
-  margin-bottom: 3em;
+  padding-bottom: 1.5em;
 }
 
 #second-project{
   text-align: center;
-  margin-bottom: 3em;
+  padding-bottom: 1.5em;
 }
 
 #third-project{
   text-align: center;
+  padding-bottom: 1.5em;
 }
 
 /*** CONTACT ***/
@@ -191,13 +209,17 @@ footer{
   align-items: center;
   flex-flow: column wrap;
   text-align: center;
+  background-color: #67b573;
+  color: white;
 }
 
-footer h3 a{
+footer a{
   text-decoration: none;
+  color: #264a2c;
 }
 
 #contact{
+
 }
 
 /* ==========================================================================
@@ -287,21 +309,63 @@ footer h3 a{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+/* Tablet Styles */
 @media only screen and (min-width: 48em){
-  body{
-    background: green;
+  header ul{
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
 
+  #projects div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+  }
 
+  #projects h1{
+    width: 100%;
+    text-align: center;
+  }
+
+  #first-project{
+    width: 33%;
+  }
+
+  #second-project{
+    width: 33%;
+  }
+
+  #third-project{
+    width: 33%;
+  }
 }
 
+/* Desktop Styles */
 @media only screen and (min-width: 75em){
-  body{
-    background: red;
+  #about{
+    flex-flow: column nowrap;
   }
 
+  #about div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
 
+  #about h2{
+    width: 100%;
+  }
+
+  .about-col-1{
+    padding: 0 1.25em;
+    margin-right: 1.875em;
+  }
+
+  .about-col-2{
+    padding: 0 1.25em;
+  }
 }
 
 /* ==========================================================================
