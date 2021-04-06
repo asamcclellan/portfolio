@@ -187,19 +187,20 @@ header span{
   margin-bottom: 2em;
 }
 
+#first-project, #second-project, #third-project{
+  padding-bottom: 3em;
+}
+
 #first-project{
   text-align: center;
-  padding-bottom: 1.5em;
 }
 
 #second-project{
   text-align: center;
-  padding-bottom: 1.5em;
 }
 
 #third-project{
   text-align: center;
-  padding-bottom: 1.5em;
 }
 
 /*** CONTACT ***/
