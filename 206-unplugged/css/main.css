@@ -350,6 +350,11 @@ input[type=button] {
   padding-left: 40px;
 }
 
+.features h2{
+  width: 100%;
+  text-align: center;
+}
+
 .features article{
   width: 100%;
   margin: 30px 0;
