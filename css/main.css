@@ -187,7 +187,7 @@ header span{
   margin-bottom: 2em;
 }
 
-#first-project, #second-project, #third-project, #fourth-project{
+.project{
   padding-bottom: 3em;
   text-align: center;
   width: 100%;
@@ -319,7 +319,7 @@ footer a{
     flex-flow: row wrap;
   }
 
-  #first-project, #second-project, #third-project, #fourth-project{
+  .project{
     width: 45%;
     padding: 1em;
   }
@@ -352,11 +352,11 @@ footer a{
   }
 
   #projects div{
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
   }
 
-  #first-project, #second-project, #third-project, #fourth-project{
-    width: 50%;
+  .project{
+    width: 30%;
     padding: 1em;
   }
 }
