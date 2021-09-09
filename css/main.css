@@ -188,7 +188,7 @@ header span{
 }
 
 .project{
-  padding-bottom: 3em;
+  padding-bottom: 3.125em;
   text-align: center;
   width: 100%;
 }
@@ -358,6 +358,10 @@ footer a{
   .project{
     width: 30%;
     padding: 1em;
+  }
+
+  #soon{
+    width: 100%;
   }
 }
 
