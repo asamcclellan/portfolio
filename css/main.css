@@ -190,6 +190,7 @@ header span{
 #first-project, #second-project, #third-project, #fourth-project{
   padding-bottom: 3em;
   text-align: center;
+  width: 100%;
 }
 
 /*** CONTACT ***/
@@ -306,30 +307,20 @@ footer a{
     justify-content: space-around;
   }
 
-  #projects div{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: row nowrap;
-  }
-
   #projects h1{
     width: 100%;
     text-align: center;
   }
 
-  #first-project{
-    width: 33%;
-    padding: 1em;
+  #projects div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
   }
 
-  #second-project{
-    width: 33%;
-    padding: 1em;
-  }
-
-  #third-project{
-    width: 33%;
+  #first-project, #second-project, #third-project, #fourth-project{
+    width: 45%;
     padding: 1em;
   }
 }
@@ -358,6 +349,15 @@ footer a{
 
   .about-col-2{
     padding: 0 1.25em;
+  }
+
+  #projects div{
+    flex-flow: row nowrap;
+  }
+
+  #first-project, #second-project, #third-project, #fourth-project{
+    width: 50%;
+    padding: 1em;
   }
 }
 
