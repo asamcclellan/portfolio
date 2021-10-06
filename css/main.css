@@ -160,13 +160,13 @@ header a{
 .about-col-2 ul{
   padding-left: 0px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
 }
 
 .about-col-2 li{
-  list-style-type: none;
+  list-style-type: circle;
 }
 
 header span{
@@ -178,7 +178,7 @@ header span{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   background-color: #f4f4f4;
 }
 
@@ -191,6 +191,10 @@ header span{
   padding-bottom: 3.125em;
   text-align: center;
   width: 100%;
+}
+
+.project img{
+  width: 90%;
 }
 
 /*** CONTACT ***/
@@ -312,11 +316,12 @@ footer a{
   }
 
   .about-col-2 h3{
-    text-align: left;
+    text-align: center;
   }
 
   .about-col-2 ul{
-    align-items: flex-start;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     padding-left: 2em;
   }
 
@@ -367,6 +372,14 @@ footer a{
 
   .about-col-2{
     width: 100%;
+  }
+
+  .about-col-2 h3{
+    text-align: left;
+  }
+
+  .about-col-2 ul{
+    flex-flow: column wrap;
   }
 
   #projects div{
