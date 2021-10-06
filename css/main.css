@@ -112,15 +112,11 @@ header{
   flex-flow: row wrap;
   text-align: center;
   background-color: #67b573;
-  color: white;
+  color: #171717;
 }
 
 header h1{
   font-size: 2em;
-}
-
-header nav{
-
 }
 
 header ul{
@@ -139,7 +135,7 @@ header li{
 header a{
   text-decoration: none;
   font-size: 1.25em;
-  color: #264a2c;
+  color: #171717;
 }
 
 /*** ABOUT ***/
@@ -147,7 +143,7 @@ header a{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   background-color: white;
 }
 
@@ -157,16 +153,20 @@ header a{
   margin-bottom: 2em;
 }
 
-#about h2 span{
-  font-size: .75em;
+.about-col-2 h3{
+  text-align: center;
 }
 
-.about-col-1{
-  margin: 1em 0;
+.about-col-2 ul{
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
-.about-col-2{
-  margin: 1em 0;
+.about-col-2 li{
+  list-style-type: none;
 }
 
 header span{
@@ -201,12 +201,12 @@ footer{
   flex-flow: column wrap;
   text-align: center;
   background-color: #67b573;
-  color: white;
+  color: #171717;
 }
 
 footer a{
   text-decoration: none;
-  color: #264a2c;
+  color: #171717;
 }
 
 #contact{
@@ -304,7 +304,24 @@ footer a{
 @media only screen and (min-width: 48em){
   header ul{
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  li{
+    padding: 0 1em;
+  }
+
+  .about-col-2 h3{
+    text-align: left;
+  }
+
+  .about-col-2 ul{
+    align-items: flex-start;
+    padding-left: 2em;
+  }
+
+  .about-col-2 li{
+  list-style-type: circle;
   }
 
   #projects h1{
@@ -328,14 +345,16 @@ footer a{
 /* Desktop Styles */
 @media only screen and (min-width: 75em){
   #about{
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
   }
 
   #about div{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    width: 50%;
+    margin-left: 5em;
   }
 
   #about h2{
@@ -343,12 +362,11 @@ footer a{
   }
 
   .about-col-1{
-    padding: 0 1.25em;
-    margin-right: 1.875em;
+    width: 100%;
   }
 
   .about-col-2{
-    padding: 0 1.25em;
+    width: 100%;
   }
 
   #projects div{
